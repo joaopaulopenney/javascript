@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de medidas</title>
+    <style>
+        input {
+            width: 150px;
+            height: 50px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Conversor de Medidas</h1> 
+    <input type="button" value="Converter" onclick="converter()">
+    </div>  
+    <div id="res">
+        Clique no botão acima para iniciar.
+    </div>
+    <script>
+        function converter() {
+            var res = window.document.querySelector('div#res')
+            var dist = window.prompt('Digite uma distância em metros (m)')
+            var km = (dist / 1000).toLocaleString('pt-BR')
+            var hm = (dist / 100).toLocaleString('pt-BR')
+            var dam = (dist / 10).toLocaleString('pt-BR')
+            var dm = (dist * 10).toLocaleString('pt-BR')
+            var cm = (dist * 100).toLocaleString('pt-BR')
+            var mm = (dist * 1000).toLocaleString('pt-BR')
+            res.innerHTML = ''
+            res.innerHTML += (`<strong>A distância de ${(dist).replace('.', ',')} metros, corresponde a...</strong> <br> <br>`)
+            res.innerHTML += `${km} quilometros (Km) <br> <br>`
+            res.innerHTML += `${hm} hectômetros (Hm) <br> <br>`
+            res.innerHTML += `${dam} decâmetros (Dam) <br> <br>`
+            res.innerHTML += `${dm} decímetros (dm) <br> <br>`
+            res.innerHTML += `${cm} centímetros (cm) <br> <br>`
+            res.innerHTML += `${mm} milímetros (mm)`
+        }
+    </script>
+</body>
+</html>

@@ -34,10 +34,10 @@
             aumento = Number(aumento).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
             nsalario = Number(nsalario).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
             res.innerHTML = ''
-            res.innerHTML += (`<strong>${nome} recebeu um aumento salarial!</strong> <br><br>`)
-            res.innerHTML += (`O salário atual era ${salario}. <br><br>`)
-            res.innerHTML += (`Com um aumento de ${porcentagem}%, o salário vai aumentar ${aumento} no próximo mês. <br><br>`)
-            res.innerHTML += (`E a partir daí, ${nome} vai passar a ganhar ${nsalario}.`)
+            res.innerHTML += (`<h2>${nome} recebeu um aumento salarial!</h2>`)
+            res.innerHTML += (`<p>O salário atual era ${salario}.</p>`)
+            res.innerHTML += (`<p>Com um aumento de ${porcentagem}%, o salário vai aumentar ${aumento} no próximo mês.</p>`)
+            res.innerHTML += (`<p>E a partir daí, ${nome} vai passar a ganhar ${nsalario}.</p>`)
         }
     </script>
 </body>

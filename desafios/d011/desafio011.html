@@ -24,11 +24,11 @@
         function verificar() {
             var res = window.document.querySelector('div#res')
             var ano = window.prompt('Qual é o ano que você quer verificar?')
-            res.innerHTML = (`<strong>Analisando o ano de ${ano}...</strong><br><br>`)
+            res.innerHTML = (`<h2>Analisando o ano de ${ano}...</h2>`)
             if (ano % 4 == 0) {
-                res.innerHTML += (`O ano de ${ano} <mark style="background-color: lightgreen; color: darkgreen">É BISSEXTO<mark>`)
+                res.innerHTML += (`<p>O ano de ${ano} <mark style="background-color: lightgreen; color: darkgreen">É BISSEXTO<mark></p>`)
             } else {
-                res.innerHTML += (`O ano de ${ano} <mark style="background-color: lightcoral; color: darkred">NÃO É BISSEXTO<mark>`)
+                res.innerHTML += (`<p>O ano de ${ano} <mark style="background-color: lightcoral; color: darkred">NÃO É BISSEXTO<mark></p>`)
             }
         }
     </script>

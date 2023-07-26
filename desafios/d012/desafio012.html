@@ -28,20 +28,20 @@
             precoan = Number(precoan)
             precoat = Number(precoat)
             res.innerHTML = ''
-            res.innerHTML += ('<strong>Analisando os valores informados</strong><br><br>')
-            res.innerHTML += (`O produto custava ${(precoan).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} e agora custa ${(precoat).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}.<br><br>`)
+            res.innerHTML += ('<h2>Analisando os valores informados</h2>')
+            res.innerHTML += (`<p>O produto custava ${(precoan).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} e agora custa ${(precoat).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}.</p>`)
             if (precoan < precoat) {
                 var precoau = Number(precoat - precoan)
                 var porceau = Number((precoat - precoan) / precoan * 100)
-                res.innerHTML += ('Hoje o produto está mais caro.<br><br>')
-                res.innerHTML += (`O preço subiu ${(precoau).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} em relação ao preço anterior.<br><br>`)
-                res.innerHTML += (`Uma variação de ${(porceau).toLocaleString('pt-BR')}% para cima.`)
+                res.innerHTML += ('<p>Hoje o produto está mais caro.</p>')
+                res.innerHTML += (`<p>O preço subiu ${(precoau).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} em relação ao preço anterior.</p>`)
+                res.innerHTML += (`<p>Uma variação de ${(porceau).toLocaleString('pt-BR')}% para cima.</p>`)
             } else {
                 var precodi = Number(precoan - precoat)
                 var porcedi = Number((precoan - precoat) / precoat * 100)
-                res.innerHTML += ('Hoje o produto está mais barato.<br><br>')
-                res.innerHTML += (`O preço caiu ${(precodi).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} em relação ao preço anterior.<br><br>`)
-                res.innerHTML += (`Uma variação de ${(porcedi).toLocaleString('pt-BR')}% para baixo.`)
+                res.innerHTML += ('<p>Hoje o produto está mais barato.</p>')
+                res.innerHTML += (`<p>O preço caiu ${(precodi).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} em relação ao preço anterior.</p>`)
+                res.innerHTML += (`<p>Uma variação de ${(porcedi).toLocaleString('pt-BR')}% para baixo.</p>`)
             }
         }
     </script>

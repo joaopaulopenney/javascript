@@ -31,13 +31,13 @@
             var cm = (dist * 100).toLocaleString('pt-BR')
             var mm = (dist * 1000).toLocaleString('pt-BR')
             res.innerHTML = ''
-            res.innerHTML += (`<strong>A distância de ${(dist).replace('.', ',')} metros, corresponde a...</strong> <br> <br>`)
-            res.innerHTML += `${km} quilometros (Km) <br> <br>`
-            res.innerHTML += `${hm} hectômetros (Hm) <br> <br>`
-            res.innerHTML += `${dam} decâmetros (Dam) <br> <br>`
-            res.innerHTML += `${dm} decímetros (dm) <br> <br>`
-            res.innerHTML += `${cm} centímetros (cm) <br> <br>`
-            res.innerHTML += `${mm} milímetros (mm)`
+            res.innerHTML += (`<h2>A distância de ${(dist).replace('.', ',')} metros, corresponde a...</h2>`)
+            res.innerHTML += `<p>${km} quilometros (Km)</p>`
+            res.innerHTML += `<p>${hm} hectômetros (Hm)</p>`
+            res.innerHTML += `<p>${dam} decâmetros (Dam)</p>`
+            res.innerHTML += `<p>${dm} decímetros (dm)</p>`
+            res.innerHTML += `<p>${cm} centímetros (cm)</p>`
+            res.innerHTML += `<p>${mm} milímetros (mm)</p>`
         }
     </script>
 </body>

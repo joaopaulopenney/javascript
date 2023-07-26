@@ -27,9 +27,9 @@
             var tempk = (Number(tempc) + 273.15).toLocaleString('pt-BR')
             var tempf = (Number(tempc) * 1.8 + 32).toLocaleString('pt-BR')
             res.innerHTML = ''
-            res.innerHTML += (`<strong>A temperatura de ${tempc.replace('.', ',')}°C, corresponde a...</strong> <br><br>`)
-            res.innerHTML += (`${tempk}°K (Kelvin) <br><br>`)
-            res.innerHTML += (`${tempf}°F (Fahrenheit)`)
+            res.innerHTML += (`<h2>A temperatura de ${tempc.replace('.', ',')}°C, corresponde a...</h2>`)
+            res.innerHTML += (`<p>${tempk}°K (Kelvin)</p>`)
+            res.innerHTML += (`<p>${tempf}°F (Fahrenheit)</p>`)
         }
     </script>
 </body>
